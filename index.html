@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Portfolio</title>
 </head>
@@ -32,7 +33,7 @@
                     <img src="img/profile.jpg" alt="Profile Picture" class="w-350 h-350 square-full">
                 </div>
                 <div>
-                    <button onclick="window.open('pdf/port.pdf', '_blank')">About Me</button>
+                    <button class="menu cursor-pointer px-4 py-2 rounded-md text-white" onclick="window.open('pdf/port.pdf', '_blank')">About Me</button>
                 </div>
                 <div id="profileMenu" class="menu cursor-pointer px-4 py-2 rounded-md bg-blue-600 text-white" onclick="showContent('profile', this)">
                     Profile

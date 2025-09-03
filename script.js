@@ -14,11 +14,11 @@ function showContent(section, element) {
   } else if (section === 'skill') {
     title.textContent = 'Skill Learning';
     text.innerHTML = `<div class="grid grid-cols-5 gap-4">
-        <img src="img/c++.png" alt="c++" class="w-full h-auto rounded-lg">
+        <img src="img/C++.png" alt="c++" class="w-full h-auto rounded-lg">
         <img src="img/bootstrap.png" alt="Bootstrap" class="w-full h-auto rounded-lg">
         <img src="img/node.png" alt="Node.js" class="w-full h-auto rounded-lg">
         <img src="img/next.png" alt="Next.js" class="w-full h-auto rounded-lg">
-        <img src="img/react.png" alt="React" class="w-full h-auto rounded-lg">
+        <img src="img/React.png" alt="React" class="w-full h-auto rounded-lg">
         <img src="img/chatgpt.png" alt="ChatGPT" class="w-full h-auto rounded-lg">
     </div>`;
   }

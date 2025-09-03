@@ -20,6 +20,10 @@ function showContent(section, element) {
         <img src="img/next.png" alt="Next.js" class="w-full h-auto rounded-lg">
         <img src="img/React.png" alt="React" class="w-full h-auto rounded-lg">
         <img src="img/chatgpt.png" alt="ChatGPT" class="w-full h-auto rounded-lg">
+        <img src="img/Figma.png" alt="Figma" class="w-full h-auto rounded-lg">
+        <img src="img/Tailwind.png" alt="Tailwind CSS" class="w-full h-auto rounded-lg">
+        <img src="img/Mongodb.png" alt="MongoDB" class="w-full h-auto rounded-lg">
+        <img src="img/MySQL.png" alt="MySQL" class="w-full h-auto rounded-lg">
     </div>`;
   }
 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex items-center">
+            <a href="#" class="text-xl font-bold text-blue-600">Portfolio</a>
+            <div class="flex space-x-4 ml-auto ">
+                <a href="#" class="py-2 px-4 text-gray-600 hover:bg-gray-100 rounded">Profile</a>
+                <a href="#certificate" class="py-2 px-4 text-gray-600 hover:bg-gray-100 rounded">Certificate</a>
+                <a href="#contact" class="py-2 px-4 text-gray-600 hover:bg-gray-100 rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container mx-auto mt-8 px-4" id="about" style="padding: auto; margin-top: 80px;">
+        <div class="flex flex-col md:flex-row gap-4 bg-gray-100 p-4 rounded-lg" >
+      
+        <!-- Sidebar -->
+        <aside class="w-full md:w-1/4 bg-white rounded-lg shadow p-4" id="sidebar">
+            <div class="space-y-2">
+                <div>
+                    <img src="img/profile.jpg" alt="Profile Picture" class="w-350 h-350 square-full">
+                </div>
+                <div id="profileMenu" class="menu cursor-pointer px-4 py-2 rounded-md bg-blue-600 text-white" onclick="showContent('profile', this)">
+                    Profile
+                </div>
+                <div id="addressMenu" class="menu cursor-pointer px-4 py-2 rounded-md hover:bg-gray-200" onclick="showContent('address', this)">
+                    Address
+                </div>
+                <div id="skillMenu" class="menu cursor-pointer px-4 py-2 rounded-md hover:bg-gray-200" onclick="showContent('skill', this)">
+                    Skill Learning
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="main-content" class="w-full md:w-3/4 bg-white rounded-lg shadow p-6">
+            <h1 id="content-title" class="text-2xl font-semibold mb-2"></h1>
+            <div id="content-text" class="text-gray-700 leading-relaxed"></div>
+        </main>
+
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-8 px-4" id="certificate">
+        <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white rounded-lg shadow p-4">
+                <img src="img/ic3.jpg" alt="ic3" class="cursor-pointer" onclick="openModal('img/ic3.jpg')">
+            </div>
+            <div class="bg-white rounded-lg shadow p-4">
+                <img src="img/project2.png" alt="Project 2" class="cursor-pointer" onclick="openModal('img/project2.png')">
+            </div>
+            <div class="bg-white rounded-lg shadow p-4">
+                <img src="img/project3.png" alt="Project 3" class="cursor-pointer" onclick="openModal('img/project3.png')">
+            </div>
+        </div>
+    </div>
+
+    <div id="modalContainer"></div>
+
+    <div class="container mx-auto mt-8 px-4" id="contact">
+         <div class="flex flex-col md:flex-row gap-4 bg-gray-100 p-4 rounded-lg">
+            <div class="w-full md-auto bg-white rounded-lg shadow p-4">
+                <h2 class="text-xl font-semibold mb-2">Contact Me</h2>
+                <a href="https://www.facebook.com/ittipon.oncharoen.2024/" class="text-blue-600 hover:underline" target="_blank"><img src="img/facebook.png" alt="Facebook" class="w-6 h-6 inline-block"></a>
+                <a href="https://github.com/Issy3310" class="text-blue-600 hover:underline" target="_blank"><img src="img/github.png" alt="github" class="w-6 h-6 inline-block"></a>
+                <a href="https://www.iittiippoonn@outlook.com/" class="text-blue-600 hover:underline" target="_blank"><img src="img/mail.png" alt="mail" class="w-10 h-10 inline-block"></a>
+            </div>
+         </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+    window.onload = function () {
+        const profileMenu = document.getElementById("profileMenu");
+        showContent('profile', profileMenu);
+    };
+    </script>
+
+    <footer class="bg-white shadow mt-8">
+        <div class="container mx-auto px-4 py-4 text-center">
+            <p class="text-gray-600">© 2023 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
